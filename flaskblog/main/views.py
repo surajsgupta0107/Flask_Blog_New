@@ -6,10 +6,6 @@ main = Blueprint("main", __name__)
 
 
 @main.route("/")
-def hello():
-    return "<h1>Hello World</h1>"
-
-
 @main.route("/home/")
 def home():
     page = request.args.get("page", 1, type=int)
